@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<%
+@number = params[:number].to_i
+@phrase = params[:phrase].split("%20").join(" ")
+i = 1
+%>
+<% while i <= @number do %>
+  <h1><%= @phrase  %></h1>
+  <% i += 1 %>
+<% end %>
